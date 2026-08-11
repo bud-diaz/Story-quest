@@ -1,0 +1,14 @@
+{
+  "id": "beaver-post-bridge-cross",
+  "npcId": "beaver-benny",
+  "startNode": "outcome",
+  "nodes": {
+    "outcome": {
+      "id": "outcome",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-happy",
+      "text": "Off you go, brave explorer! Mind your step on the far bank — I hear the old cave trail winds on for quite a while.",
+      "next": null
+    }
+  }
+}

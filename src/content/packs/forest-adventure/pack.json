@@ -1,0 +1,8 @@
+{
+  "id": "forest-adventure",
+  "version": "0.1.0",
+  "title": "The Bridge in Whispering Forest",
+  "description": "A short StoryQuest adventure: help Benny the Beaver fix the forest bridge.",
+  "startSceneId": "hub",
+  "startSpawnPoint": "default"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "beaver-idle-post-quest",
+  "npcId": "beaver-benny",
+  "startNode": "idle",
+  "nodes": {
+    "idle": {
+      "id": "idle",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-happy",
+      "text": "Thanks again for helping me fix the bridge! The forest is safer because of you.",
+      "next": null
+    }
+  }
+}

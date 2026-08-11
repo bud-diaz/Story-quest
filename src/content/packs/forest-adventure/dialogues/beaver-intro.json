@@ -1,0 +1,72 @@
+{
+  "id": "beaver-intro",
+  "npcId": "beaver-benny",
+  "startNode": "greet",
+  "nodes": {
+    "greet": {
+      "id": "greet",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-worried",
+      "text": "Oh dear, oh dear! The old bridge washed out in the storm!",
+      "effects": [{ "type": "flag", "flag": "metBenny", "op": "set", "value": true }],
+      "next": "explain"
+    },
+    "explain": {
+      "id": "explain",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-worried",
+      "text": "I need 7 logs to fix it. I've only gathered 4 so far...",
+      "next": "ask-help"
+    },
+    "ask-help": {
+      "id": "ask-help",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-hopeful",
+      "text": "Could you help me figure out how many more logs I need?",
+      "choices": [
+        { "id": "yes-help", "text": "Sure, let's count them together!", "next": "start-math-challenge" },
+        {
+          "id": "stall",
+          "text": "Tell me more about the bridge first.",
+          "next": "lore",
+          "conditions": [{ "type": "flag", "flag": "askedBridgeLore", "op": "falsy" }]
+        }
+      ]
+    },
+    "lore": {
+      "id": "lore",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-hopeful",
+      "text": "This old bridge has connected the forest to the cave trail for as long as I can remember!",
+      "effects": [{ "type": "flag", "flag": "askedBridgeLore", "op": "set", "value": true }],
+      "next": "ask-help"
+    },
+    "start-math-challenge": {
+      "id": "start-math-challenge",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-hopeful",
+      "text": "Here, look at my little pile of logs...",
+      "challengeId": "math-beaver-logs",
+      "onSuccessNext": "math-success",
+      "onFailureNext": "math-retry"
+    },
+    "math-retry": {
+      "id": "math-retry",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-confused",
+      "text": "Hmm, not quite! Let's count together again, nice and slow.",
+      "challengeId": "math-beaver-logs",
+      "onSuccessNext": "math-success",
+      "onFailureNext": "math-retry"
+    },
+    "math-success": {
+      "id": "math-success",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-happy",
+      "text": "Three more logs, exactly right! Let's see what happens next...",
+      "effects": [{ "type": "trait", "trait": "clever", "delta": 1 }],
+      "next": null,
+      "triggersBranch": "bridge-fork"
+    }
+  }
+}

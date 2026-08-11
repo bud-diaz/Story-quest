@@ -1,0 +1,16 @@
+{
+  "id": "reading-forest-sign",
+  "type": "reading",
+  "promptText": "A weathered wooden signpost creaks in the breeze at a fork in the path.",
+  "promptWord": "Tap the word that says: CAVE",
+  "targetWord": "CAVE",
+  "options": ["CAVE", "LAKE", "TREE"],
+  "correctOption": "CAVE",
+  "retryAllowed": true,
+  "successEffects": [
+    { "type": "flag", "flag": "readSignpost", "op": "set", "value": true },
+    { "type": "trait", "trait": "curious", "delta": 1 },
+    { "type": "item", "itemId": "shiny-pebble", "op": "add", "quantity": 1 }
+  ],
+  "failureEffects": []
+}

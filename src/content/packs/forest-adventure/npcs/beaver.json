@@ -1,0 +1,10 @@
+{
+  "id": "beaver-benny",
+  "name": "Benny the Beaver",
+  "sceneId": "forest",
+  "spawnPoint": { "x": 640, "y": 420 },
+  "portraitTextureKey": "portrait-beaver",
+  "spriteTextureKey": "sprite-beaver",
+  "defaultDialogueId": "beaver-intro",
+  "postDialogue": { "flag": "branch:bridge-fork", "dialogueId": "beaver-idle-post-quest" }
+}

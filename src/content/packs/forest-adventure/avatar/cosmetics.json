@@ -1,0 +1,29 @@
+[
+  {
+    "id": "travelers-cap",
+    "slot": "head",
+    "name": "Traveler's Cap",
+    "description": "A trusty cap for setting out on adventures.",
+    "unlockConditions": [],
+    "autoEquip": true,
+    "textureKey": "cosmetic-travelers-cap"
+  },
+  {
+    "id": "forest-cloak",
+    "slot": "back",
+    "name": "Forest Cloak",
+    "description": "A leafy green cloak, earned by a curious explorer.",
+    "unlockConditions": [{ "type": "trait", "trait": "curious", "op": "gte", "value": 1 }],
+    "autoEquip": true,
+    "textureKey": "cosmetic-forest-cloak"
+  },
+  {
+    "id": "helpers-badge",
+    "slot": "aura",
+    "name": "Helper's Badge",
+    "description": "Shows everyone you lent a paw when it counted.",
+    "unlockConditions": [{ "type": "flag", "flag": "branch:bridge-fork", "op": "eq", "value": "help-gather" }],
+    "autoEquip": true,
+    "textureKey": "cosmetic-helpers-badge"
+  }
+]

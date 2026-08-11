@@ -1,0 +1,9 @@
+[
+  {
+    "id": "shiny-pebble",
+    "name": "Shiny Pebble",
+    "description": "A smooth, sparkly pebble you found in the forest.",
+    "stackable": true,
+    "iconTextureKey": "icon-pebble"
+  }
+]
