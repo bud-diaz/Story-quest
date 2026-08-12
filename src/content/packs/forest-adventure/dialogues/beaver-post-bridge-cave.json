@@ -1,0 +1,14 @@
+{
+  "id": "beaver-post-bridge-cave",
+  "npcId": "beaver-benny",
+  "startNode": "outcome",
+  "nodes": {
+    "outcome": {
+      "id": "outcome",
+      "speakerId": "beaver-benny",
+      "portrait": "portrait-beaver-happy",
+      "text": "Ooooh, the cave! I've always wondered what's in there. Be curious, be careful, and come tell me what you find!",
+      "next": null
+    }
+  }
+}

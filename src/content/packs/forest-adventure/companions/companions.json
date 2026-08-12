@@ -1,0 +1,18 @@
+[
+  {
+    "id": "turtle-tumble",
+    "species": "turtle",
+    "name": "Tumble the Turtle",
+    "description": "A steady, patient turtle who knows every shortcut through shallow water.",
+    "recruitConditions": [{ "type": "flag", "flag": "branch:bridge-fork", "op": "eq", "value": "help-gather" }],
+    "unlocksInteractions": ["river-shortcut"]
+  },
+  {
+    "id": "fox-scout",
+    "species": "fox",
+    "name": "Scout the Fox",
+    "description": "A quick, clever fox who loves hidden trails. (Coming soon!)",
+    "recruitConditions": [{ "type": "flag", "flag": "__unreachable_in_mvp", "op": "truthy" }],
+    "unlocksInteractions": ["hidden-trail"]
+  }
+]

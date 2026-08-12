@@ -1,0 +1,23 @@
+{
+  "id": "fix-the-bridge",
+  "title": "Fix the Forest Bridge",
+  "summary": "Benny the Beaver needs help repairing the washed-out bridge.",
+  "startCondition": { "type": "flag", "flag": "metBenny", "op": "truthy" },
+  "steps": [
+    {
+      "id": "talk-to-benny",
+      "description": "Talk to Benny about the bridge.",
+      "completionCondition": { "type": "flag", "flag": "metBenny", "op": "truthy" }
+    },
+    {
+      "id": "solve-log-math",
+      "description": "Help Benny count how many more logs he needs.",
+      "completionCondition": { "type": "flag", "flag": "bridgeFixed", "op": "truthy" }
+    },
+    {
+      "id": "choose-path",
+      "description": "Decide what to do now that the bridge is fixed.",
+      "completionCondition": { "type": "flag", "flag": "branch:bridge-fork", "op": "truthy" }
+    }
+  ]
+}

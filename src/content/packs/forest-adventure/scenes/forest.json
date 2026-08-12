@@ -1,0 +1,39 @@
+{
+  "id": "forest",
+  "name": "Whispering Forest",
+  "spawnPoints": {
+    "default": { "x": 80, "y": 300 },
+    "fromHub": { "x": 80, "y": 300 }
+  },
+  "npcs": ["beaver-benny"],
+  "signposts": [
+    { "id": "sign-hub", "label": "Hub", "x": 40, "y": 120, "locked": false, "targetSceneId": "hub", "targetSpawnPoint": "fromForest" }
+  ],
+  "interactables": [
+    { "id": "forest-signpost", "type": "challenge", "challengeId": "reading-forest-sign", "x": 360, "y": 200 },
+    {
+      "id": "bridge",
+      "type": "bridge",
+      "unlockedByFlag": "bridgeFixed",
+      "x": 640,
+      "y": 460,
+      "lockedText": "The bridge is broken. Maybe Benny the Beaver knows what happened."
+    },
+    {
+      "id": "cave-entrance",
+      "type": "gate",
+      "unlockedByFlag": "caveEntranceUnlocked",
+      "x": 820,
+      "y": 500,
+      "lockedText": "The cave mouth is dark and quiet."
+    },
+    {
+      "id": "river-shortcut",
+      "type": "companionGate",
+      "requiresCompanionInteraction": "river-shortcut",
+      "x": 100,
+      "y": 520,
+      "lockedText": "The water looks a bit deep to cross alone."
+    }
+  ]
+}

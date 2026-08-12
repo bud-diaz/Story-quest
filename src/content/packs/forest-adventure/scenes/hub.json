@@ -1,0 +1,24 @@
+{
+  "id": "hub",
+  "name": "Hub Clearing",
+  "spawnPoints": {
+    "default": { "x": 400, "y": 300 },
+    "fromForest": { "x": 260, "y": 220 }
+  },
+  "signposts": [
+    {
+      "id": "sign-forest",
+      "label": "Forest",
+      "x": 200,
+      "y": 200,
+      "locked": false,
+      "targetSceneId": "forest",
+      "targetSpawnPoint": "fromHub"
+    },
+    { "id": "sign-village", "label": "Village", "x": 540, "y": 160, "locked": true, "lockedText": "This path looks overgrown... maybe next time." },
+    { "id": "sign-mountain", "label": "Mountain", "x": 660, "y": 260, "locked": true, "lockedText": "A tall peak in the distance. Not yet!" },
+    { "id": "sign-river", "label": "River", "x": 150, "y": 430, "locked": true, "lockedText": "The river path is quiet for now." },
+    { "id": "sign-castle", "label": "Castle", "x": 700, "y": 420, "locked": true, "lockedText": "A castle spire peeks over the trees..." },
+    { "id": "sign-ruins", "label": "Ancient Ruins", "x": 340, "y": 500, "locked": true, "lockedText": "Old stones, half-buried. A story for another day." }
+  ]
+}

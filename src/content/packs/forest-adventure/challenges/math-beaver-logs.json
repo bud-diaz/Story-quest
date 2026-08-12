@@ -1,0 +1,15 @@
+{
+  "id": "math-beaver-logs",
+  "type": "math",
+  "promptText": "Benny counts his logs in a neat little pile: one, two, three, four.",
+  "questionText": "Benny needs 7 logs in total. How many MORE logs does he need to find?",
+  "operands": { "have": 4, "need": 7 },
+  "answer": 3,
+  "choices": [2, 3, 4, 5],
+  "retryAllowed": true,
+  "successEffects": [
+    { "type": "flag", "flag": "bridgeFixed", "op": "set", "value": true },
+    { "type": "trait", "trait": "clever", "delta": 1 }
+  ],
+  "failureEffects": []
+}
